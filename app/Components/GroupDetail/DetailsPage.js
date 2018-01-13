@@ -1,21 +1,19 @@
 import React, {Component} from 'react';
 import {
-	AppRegistry,
-	Text,
-	FlatList,
-	ActivityIndicator, ToastAndroid, Alert, Platform, TouchableOpacity
+	AppRegistry, Text,
+	FlatList, ToastAndroid,
+	Alert, Platform, TouchableOpacity
 } from 'react-native';
 import {List, ListItem, SearchBar, Icon} from 'react-native-elements'
 import MainGroupStyle from './Style';
 import CommonTheme from '../../Theme/Common';
 
-export default class GroupsListElement extends Component {
-
+export default class ShowGroupDetailScreen extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			data: props.eventData,
-			_index: props.indexEventToShow
+			_index: props.indexGroupToShow
 		};
 	}
 
@@ -41,14 +39,8 @@ export default class GroupsListElement extends Component {
 		}
 	};
 
-	goToGroup = () => {
-		this.props.navigation.navigate('DetailsPage', {indexGroupToShow: 1})
-	};
-
 	_renderItem = ({item}) => (
-		<TouchableOpacity
-			onPress={this.goToGroup}
-		>
+		<TouchableOpacity onPress={this._onPressButton}>
 			<ListItem
 				id={item.id}
 				// onPressItem={this._onPressButton}
@@ -88,4 +80,4 @@ export default class GroupsListElement extends Component {
 	}
 }
 
-AppRegistry.registerComponent('GroupsListElement', () => GroupsListElement);
+AppRegistry.registerComponent('ShowGroupDetailScreen', () => ShowGroupDetailScreen);

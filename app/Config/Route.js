@@ -4,19 +4,20 @@ import {Button} from 'react-native';
 // import { Icon } from 'react-native-elements';
 
 // import LateralMenu        from '../Components/SideMenu/LateralMenu';
-import HomeScreen           from '../Components/Index/Index';
-import LoginScreen          from '../Components/Login/Login';
+import HomeScreen from '../Components/Index/Index';
+import LoginScreen from '../Components/Login/Login';
 import ChooseInterestScreen from '../Components/ChooseInterest/ChooseInterest';
-import EventScreen          from '../Components/Event/Event';
-import HandleEventScreen    from '../Components/HandleEvent/HandleEvent';
-import MainGroupScreen      from '../Components/SocialGroup/MainPage';
-import CreateGroupScreen    from '../Components/SocialGroup/CreateGroup';
+import EventScreen from '../Components/Event/Event';
+import HandleEventScreen from '../Components/HandleEvent/HandleEvent';
+import MainGroupScreen from '../Components/SocialGroup/MainPage';
+import CreateGroupScreen from '../Components/SocialGroup/CreateGroup';
+import ShowGroupDetailScreen from '../Components/GroupDetail/DetailsPage';
 /*
  export const TabNav = TabNavigator({
  Event: {
  screen: EventScreen,
  navigationOptions: {
- title: 'WeLoveIt',
+ title: 'NjiTrip',
  headerTintColor: '#ccff90',
  headerStyle: {
  backgroundColor : '#424242'
@@ -52,7 +53,7 @@ export const Stack = StackNavigator({
 		MainGroupPage: {
 			screen: MainGroupScreen,
 			navigationOptions: {
-				title: 'WeLoveIt - Be Social',
+				title: 'NjiTrip - Be Social',
 				headerTintColor: '#ccff90',
 				headerStyle: {
 					backgroundColor: '#424242',
@@ -92,7 +93,7 @@ export const Stack = StackNavigator({
 		Event: {
 			screen: EventScreen,
 			navigationOptions: {
-				title: 'WeLoveIt',
+				title: 'NjiTrip',
 				headerTintColor: '#ccff90',
 				headerStyle: {
 					backgroundColor: '#424242'
@@ -103,7 +104,7 @@ export const Stack = StackNavigator({
 		HandleEvent: {
 			screen: HandleEventScreen,
 			navigationOptions: {
-				title: 'WeLoveIt - Handle the fun',
+				title: 'NjiTrip - Handle the fun',
 				headerTintColor: '#ccff90',
 				headerStyle: {
 					backgroundColor: '#424242',
@@ -113,7 +114,17 @@ export const Stack = StackNavigator({
 		CreateGroup: {
 			screen: CreateGroupScreen,
 			navigationOptions: ({ navigation }) => ({
-				title: 'WeLoveIt - Begin to Be Social',
+				title: 'NjiTrip - Begin to Be Social',
+				headerTintColor: '#ccff90',
+				headerStyle: {
+					backgroundColor: '#424242',
+				},
+			}),
+		},
+		DetailsPage: {
+			screen: ShowGroupDetailScreen,
+			navigationOptions: ({ navigation }) => ({
+				title: 'NjiTrip - Group Detail',
 				headerTintColor: '#ccff90',
 				headerStyle: {
 					backgroundColor: '#424242',
