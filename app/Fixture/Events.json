@@ -1,0 +1,247 @@
+{
+  "Events": [
+    {
+      "id" : "1",
+      "name": "TommyVee at Uno",
+      "date": "19/07/2017",
+      "description": "1st european date",
+      "city": "Ta Qali",
+      "country": "Malta",
+      "address": "Ta Qali Craft Village",
+      "favorites": "0",
+      "joined": "0",
+      "location": "Uno",
+      "manager": "Tommaso",
+      "imgUrl": "https://placeimg.com/640/480/people?t=1498915655064",
+      "videoUrl": "",
+      "uploaded": "15/06/2017",
+      "updated": "15/06/2017",
+      "status": "active",
+      "ticketUrl": "",
+      "groups_list": [
+        {
+          "id": "DSF456YTH4K",
+          "admins_list": [
+            89,
+            64,
+            29
+          ],
+          "created_at": "",
+          "updated_at": "",
+          "userId_list": [
+            1,
+            2,
+            3,
+            8,
+            88,
+            79,
+            789,
+            15885,
+            7777
+          ],
+          "name": "stuff",
+          "description": "",
+          "status": "active",
+          "starred": 5,
+          "chat_reference": "4577887990"
+        },
+        {
+          "id": "DSF456YTHGK",
+          "admins_list": [
+            89,
+            64,
+            29
+          ],
+          "created_at": "",
+          "updated_at": "",
+          "userId_list": [
+            1,
+            2,
+            3,
+            8,
+            88,
+            79,
+            789,
+            7777
+          ],
+          "name": "ytrutyu",
+          "description": "",
+          "status": "active",
+          "starred": 5,
+          "chat_reference": "4577887990"
+        }
+      ],
+      "artists": [
+        {
+          "name": "TommyVee",
+          "role": "dj",
+          "links": "TommyVee.com"
+        },
+        {
+          "name": "Gaty",
+          "role": "Vocalist",
+          "links": "gaty.com"
+        }
+      ]
+    },
+    {
+      "id" : "2",
+      "name": "Christian Marchi at Uno",
+      "date": "12/07/2017",
+      "description": "!st european date",
+      "city": "Ta Qali",
+      "country": "Malta",
+      "address": "Ta Qali Craft Village",
+      "favorites": "0",
+      "joined": "0",
+      "location": "Uno",
+      "manager": "Tommaso",
+      "imgUrl": "https://placeimg.com/640/480/people?t=1498915694696",
+      "videoUrl": "",
+      "uploaded": "15/06/2017",
+      "updated": "15/06/2017",
+      "status": "active",
+      "ticketUrl": "",
+      "groups_list": [
+        {
+          "id": "YKUDESWEYT1",
+          "admins_list": [
+            89,
+            64,
+            29
+          ],
+          "created_at": "",
+          "updated_at": "",
+          "userId_list": [
+            1,
+            2,
+            3,
+            8,
+            88,
+            79,
+            789,
+            15885,
+            7777
+          ],
+          "name": "stuff",
+          "description": "",
+          "status": "active",
+          "starred": 5,
+          "chat_reference": "4577887990"
+        },
+        {
+          "id": "GFHFGHL65456A",
+          "admins_list": [
+            89,
+            64,
+            29
+          ],
+          "created_at": "",
+          "updated_at": "",
+          "userId_list": [
+            1,
+            2,
+            3,
+            8,
+            88,
+            79,
+            789,
+            15885,
+            7777
+          ],
+          "name": "ytrutyu",
+          "description": "",
+          "status": "active",
+          "starred": 5,
+          "chat_reference": "4577887990"
+        },
+        {
+          "id": "GSERTWS4E56FJGH2",
+          "admins_list": [
+            89,
+            64,
+            29
+          ],
+          "created_at": "",
+          "updated_at": "",
+          "userId_list": [
+            1,
+            2,
+            3,
+            8,
+            88,
+            79,
+            789,
+            15885,
+            7777
+          ],
+          "name": "jgh ghjfghj",
+          "description": "",
+          "status": "active",
+          "starred": 5,
+          "chat_reference": "4577887990"
+        },
+        {
+          "id": "ERGR645UMNCVBNN",
+          "admins_list": [
+            89,
+            64,
+            29
+          ],
+          "created_at": "",
+          "updated_at": "",
+          "userId_list": [
+            1,
+            2,
+            3,
+            8,
+            88,
+            79,
+            789,
+            15885,
+            7777
+          ],
+          "name": "ytrutyu",
+          "description": "",
+          "status": "active",
+          "starred": 5,
+          "chat_reference": "4577887990"
+        },
+        {
+          "id": "SDGHSR5Y3756HGF3",
+          "admins_list": [
+            89,
+            64,
+            29
+          ],
+          "created_at": "",
+          "updated_at": "",
+          "userId_list": [
+            1,
+            2,
+            3,
+            8,
+            88,
+            79,
+            789,
+            15885,
+            7777
+          ],
+          "name": "jgh ghjfghj",
+          "description": "",
+          "status": "active",
+          "starred": 5,
+          "chat_reference": "4577887990"
+        }
+      ],
+      "artists": [
+        {
+          "name": "Christian Marchi ",
+          "role": "dj",
+          "links": "ChristianMarchi .com"
+        }
+      ]
+    }
+  ]
+}
+
