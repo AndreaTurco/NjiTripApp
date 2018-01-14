@@ -94,6 +94,15 @@ const MainGroupStyle = StyleSheet.create({
 		fontSize: 18,
 		color: '#000'
 	},
+	drawerMenuButton: {
+		color : "#ccff90",
+		fontWeight: 'bold',
+		fontSize: 16,
+		width: 100,
+		height:30,
+		textAlign:'center',
+		paddingTop: 5,
+	},
 });
 
 export default MainGroupStyle;

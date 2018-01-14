@@ -13,6 +13,7 @@ import MainGroupScreen from '../Components/SocialGroup/MainPage';
 import CreateGroupScreen from '../Components/SocialGroup/CreateGroup';
 import ShowGroupDetailScreen from '../Components/GroupDetail/DetailsPage';
 import MainGroupStyle from "../Components/SocialGroup/Style";
+import CommonTheme from "../Theme/Common";
 /*
  export const TabNav = TabNavigator({
  Event: {
@@ -141,7 +142,7 @@ const Stack = StackNavigator({
 			// headerTintColor: 'white',
 			headerRight:
 					<Text
-						style={{ color : "#ccff90", paddingRight: 30, fontWeight: 'bold', fontSize: 18,}}
+						style={MainGroupStyle.drawerMenuButton}
 						onPress={() => navigation.navigate('DrawerOpen')}>
 						Menu
 					</Text>
@@ -149,12 +150,12 @@ const Stack = StackNavigator({
 	}
 );
 export const TabDrawer = DrawerNavigator ({
-		MainGroupPage: {
-			screen: Stack
-		},
+	MainGroupPage: {
+		screen: Stack
+	},
 	ChooseInterest: {
 			screen: ChooseInterestScreen
-		}
+	}
 	},{
 		drawerPosition : 'right',
 		activeTintColor: '#76ff03',
