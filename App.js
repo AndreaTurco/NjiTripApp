@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Stack} from './app/Config/Route';
+import {TabDrawer} from './app/Config/Route';
 import {
 	AppRegistry,
 } from 'react-native';
@@ -7,7 +7,7 @@ import {
 export default class NativeApp extends Component {
 	render() {
 		return (
-			<Stack/>
+			<TabDrawer/>
 		);
 	}
 }

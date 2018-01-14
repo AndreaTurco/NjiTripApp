@@ -50,7 +50,8 @@ export const DrawerNav = DrawerNavigator({
  // },
  */
 
-export const Stack = StackNavigator({
+
+const Stack = StackNavigator({
 		MainGroupPage: {
 			screen: MainGroupScreen,
 			navigationOptions: {
@@ -88,9 +89,6 @@ export const Stack = StackNavigator({
 				// headerRight: <Button title="Info" />,
 			},
 		},
-		/*		Event: {
-		 screen : TabNav
-		 }*/
 		Event: {
 			screen: EventScreen,
 			navigationOptions: {
@@ -142,32 +140,45 @@ export const Stack = StackNavigator({
 			// title: 'Welcome!',
 			// headerTintColor: 'white',
 			headerRight:
-				<TouchableOpacity>
 					<Text
-						style={{ color : "#ccff90", paddingHorizontal: 10, fontWeight: 'bold', fontSize: 22,}}
+						style={{ color : "#ccff90", paddingRight: 30, fontWeight: 'bold', fontSize: 18,}}
 						onPress={() => navigation.navigate('DrawerOpen')}>
 						Menu
 					</Text>
-				</TouchableOpacity >,
 		})
 	}
 );
-
-
-const easyRNRoute = DrawerNavigator({
-	Home: {
-		screen: HomeScreen,
+export const TabDrawer = DrawerNavigator ({
+		MainGroupPage: {
+			screen: Stack
+		},
+	ChooseInterest: {
+			screen: ChooseInterestScreen
+		}
+	},{
+		drawerPosition : 'right',
+		activeTintColor: '#76ff03',
+		drawerBackgroundColor: '#ccff90',
+	}
+);
+/*export const TabDrawer = TabNavigator ({
+	MainGroupPage: {
+		screen: Stack
 	},
-	Stack: {
+	Interest: {
 		screen: ChooseInterestScreen
 	}
 }, {
 	// contentComponent: DrawerMenu,
-	contentOptions: {
-		activeTintColor: '#e91e63',
-		style: {
-			flex: 1,
-				paddingTop: 15,
+	tabBarPosition: "bottom",
+	tabBarOptions : {
+		labelStyle: {
+			fontSize: 12,
+			color: '#000',
+		},
+		style : {
+			height: 30,
+			backgroundColor: '#ccff90',
 		}
-	}
-});
+	},
+});*/

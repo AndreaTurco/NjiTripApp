@@ -3,8 +3,6 @@ import {
 	AppRegistry,
 	Text,
 	View,
-	Image,
-	ListView,
 } from 'react-native';
 import Button from 'apsl-react-native-button';
 import {Icon , SocialIcon} from 'react-native-elements';
@@ -32,6 +30,10 @@ export default class ShowGroupDetailScreen extends Component {
 					<Text style={MainGroupStyle.shareFunTitle}>
 						Share the fun
 					</Text>
+					<Button
+						onPress={() =>  this.props.navigation.navigate('DrawerOpen')}
+					> oprn
+					</Button>
 				</View>
 			</View>
 		);
