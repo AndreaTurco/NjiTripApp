@@ -1,6 +1,6 @@
 import React from 'react';
 import {StackNavigator, TabNavigator, DrawerNavigator, DrawerItems} from 'react-navigation';
-import {Button} from 'react-native';
+import {Button, Text, TouchableOpacity} from 'react-native';
 // import { Icon } from 'react-native-elements';
 
 // import LateralMenu        from '../Components/SideMenu/LateralMenu';
@@ -12,6 +12,7 @@ import HandleEventScreen from '../Components/HandleEvent/HandleEvent';
 import MainGroupScreen from '../Components/SocialGroup/MainPage';
 import CreateGroupScreen from '../Components/SocialGroup/CreateGroup';
 import ShowGroupDetailScreen from '../Components/GroupDetail/DetailsPage';
+import MainGroupStyle from "../Components/SocialGroup/Style";
 /*
  export const TabNav = TabNavigator({
  Event: {
@@ -136,5 +137,37 @@ export const Stack = StackNavigator({
 	,
 	{
 		headerMode: 'screen',
+		navigationOptions: ({navigation}) => ({
+			// headerStyle: {backgroundColor: '#4C3E54'},
+			// title: 'Welcome!',
+			// headerTintColor: 'white',
+			headerRight:
+				<TouchableOpacity>
+					<Text
+						style={{ color : "#ccff90", paddingHorizontal: 10, fontWeight: 'bold', fontSize: 22,}}
+						onPress={() => navigation.navigate('DrawerOpen')}>
+						Menu
+					</Text>
+				</TouchableOpacity >,
+		})
 	}
 );
+
+
+const easyRNRoute = DrawerNavigator({
+	Home: {
+		screen: HomeScreen,
+	},
+	Stack: {
+		screen: ChooseInterestScreen
+	}
+}, {
+	// contentComponent: DrawerMenu,
+	contentOptions: {
+		activeTintColor: '#e91e63',
+		style: {
+			flex: 1,
+				paddingTop: 15,
+		}
+	}
+});
