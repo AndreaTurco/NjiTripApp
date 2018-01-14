@@ -41,13 +41,13 @@ export default class GroupsListElement extends Component {
 		}
 	};
 
-	goToGroup = () => {
-		this.props.navigation.navigate('DetailsPage', {indexGroupToShow: 1})
+	_goToGroup = (id: string) => {
+		this.props.navigation.navigate('DetailsPage', {indexGroupToShow: id})
 	};
 
 	_renderItem = ({item}) => (
 		<TouchableOpacity
-			onPress={this.goToGroup}
+			onPress={() => this._goToGroup(item.id)}
 		>
 			<ListItem
 				id={item.id}
@@ -74,7 +74,7 @@ export default class GroupsListElement extends Component {
 	render() {
 		return (
 			<List>
-				<Text>Joinable Groups List</Text>
+				<Text> Joinable Groups List</Text>
 				<FlatList
 					data={this.state.data.Events[this.state._index].groups_list}
 					extraData={this.state}

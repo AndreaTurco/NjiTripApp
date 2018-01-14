@@ -36,6 +36,7 @@ export default class MainGroupScreen extends Component {
 						<GroupsListElement
 							indexEventToShow={this.state._index}
 							eventData={this.state.data}
+							navigation={this.props.navigation}
 						/>
 					</View>
 					<View style={[MainGroupStyle.joinOldOrById]}>
