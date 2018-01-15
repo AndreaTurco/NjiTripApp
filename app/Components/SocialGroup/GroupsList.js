@@ -41,13 +41,13 @@ export default class GroupsListElement extends Component {
 		}
 	};
 
-	_goToGroup = (id: string) => {
-		this.props.navigation.navigate('DetailsPage', {indexGroupToShow: id})
+	_goToGroup = (id: string, item: array) => {
+		this.props.navigation.navigate('DetailsPage', {indexGroupToShow: id, group_data: item})
 	};
 
 	_renderItem = ({item}) => (
 		<TouchableOpacity
-			onPress={() => this._goToGroup(item.id)}
+			onPress={() => this._goToGroup(item.id, item)}
 		>
 			<ListItem
 				id={item.id}

@@ -1,35 +1,34 @@
 import React, {StyleSheet} from 'react-native';
 
-const CategoriesListStyle = StyleSheet.create({
+const MainGroupStyle = StyleSheet.create({
 
-	pageDescription: {
-	},
-	listOfAllTheCategories: {
-		marginBottom: 50
-	},
-	listOfAllTheCategories: {
-		marginBottom: 50
-	},
-	listWrapper: {
-		flexDirection: 'row',
-		flexWrap: 'wrap',
+	mainSection: {
+		flex: 1,
+		justifyContent: 'center',
 		alignSelf: 'stretch',
 	},
-
-	singleWrapper:{
-		width : 150,
-		margin: 5,
-		borderRadius: 30,
-		borderWidth: 1,
-		borderColor: '#76ff03'
+	footer: {
+		flex: 4,
+		alignSelf: 'stretch',
+		paddingHorizontal: 25,
+		justifyContent: 'space-between',
+		alignItems: 'stretch',
 	},
-	categoryDetails: {
+
+	eventDetails: {
 		justifyContent: 'center',
 		alignItems: 'center',
+		marginTop: 5
 	},
-	iconWrapper: {
+	header: {
 		flex: 1,
-		// paddingLeft: 15,
+		justifyContent: 'center',
+		marginBottom: 20,
+		flexDirection: 'row'
+	},
+	roundWrapper: {
+		flex: 1,
+		paddingLeft: 15,
 	},
 	imageWrapper: {
 		// marginLeft: 15,
@@ -48,19 +47,62 @@ const CategoriesListStyle = StyleSheet.create({
 		fontWeight: 'bold',
 		fontSize: 22,
 		justifyContent: 'center',
-		textAlign: 'center',
+		textAlign: 'left',
 		marginBottom: 15,
 		color: '#ccff90'
 	},
 	eventDescription: {
 		color: '#fff',
 		justifyContent: 'center',
-		textAlign: 'center',
+		textAlign: 'left',
 		fontSize: 14,
 		marginBottom: 8,
 	},
 
+	showListOfAllGroup: {},
+	joinOldOrById: {},
+	createNewOne: {},
 
+	shareFunTitle : {
+		textAlign: 'center',
+		color: 'white'
+	},
+	inviteButton: {
+		flexDirection: 'row',
+		justifyContent: 'center',
+	},
+
+	footerButton: {
+		backgroundColor: '#cfcfcf',
+		// backgroundColor: '#f3e5f5',
+		marginVertical: 5,
+		height: 44,
+		alignItems: 'center',
+		borderWidth: 1,
+		borderRadius: 8,
+		marginBottom: 10,
+		alignSelf: 'stretch',
+		justifyContent: 'center',
+	},
+	footerButtonGroup: {
+		backgroundColor: '#76ff03',
+	},
+	footerButtonTicket: {
+		backgroundColor: '#b2ff59',
+	},
+	footerText: {
+		fontSize: 18,
+		color: '#000'
+	},
+	drawerMenuButton: {
+		color : "#ccff90",
+		fontWeight: 'bold',
+		fontSize: 16,
+		width: 100,
+		height:30,
+		textAlign:'center',
+		paddingTop: 5,
+	},
 });
 
-export default CategoriesListStyle;
+export default MainGroupStyle;
